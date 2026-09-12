@@ -98,7 +98,7 @@ function App() {
       });
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }
@@ -128,7 +128,7 @@ function App() {
         });
         const data = await response.json();
 
-        if (response.status === 401) {
+        if (response.status === 401 || response.status === 404) {
           handleLogout();
           return;
         }
@@ -197,7 +197,7 @@ function App() {
 
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }
@@ -225,7 +225,7 @@ function App() {
       });
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }
@@ -304,7 +304,7 @@ function App() {
 
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }
@@ -448,7 +448,7 @@ function App() {
       });
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }
@@ -509,7 +509,7 @@ function App() {
 
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }
@@ -547,7 +547,7 @@ function App() {
       });
       const data = await response.json();
 
-      if (response.status === 401) {
+      if (response.status === 401 || response.status === 404) {
         handleLogout();
         return;
       }

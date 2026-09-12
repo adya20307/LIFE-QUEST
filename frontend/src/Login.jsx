@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://life-quest-backend-g8td.onrender.com";
 
 function Login({ onLogin }) {
   const [mode, setMode] = useState("login");

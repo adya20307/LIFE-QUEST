@@ -255,6 +255,18 @@ router.ready = createTasksTable();
 
 router.get("/", authenticateToken, async (req, res) => {
   try {
+    const userResult = await db.query(
+      "SELECT id FROM users WHERE id = $1",
+      [req.user.userId]
+    );
+
+    if (userResult.rows.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+
     const result = await db.query(
       `SELECT
         id,
