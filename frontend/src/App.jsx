@@ -26,7 +26,7 @@ import {
 
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://life-quest-backend-g8td.onrender.com/api";
 
 function App() {
   // ============================================

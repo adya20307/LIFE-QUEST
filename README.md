@@ -267,7 +267,7 @@ npm start
 The backend listens on:
 
 ```text
-http://localhost:5000
+http://life-quest-backend-g8td.onrender.com
 ```
 
 The backend package currently does not define an `npm start` script. If needed, run the server directly:
