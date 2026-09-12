@@ -1249,6 +1249,8 @@ function App() {
               <label>
                 QUEST TITLE
                 <input
+                  id="quest-title"
+                  name="title"
                   required
                   maxLength={200}
                   value={questForm.title}
@@ -1259,6 +1261,8 @@ function App() {
               <label>
                 CATEGORY
                 <input
+                  id="quest-category"
+                  name="category"
                   required
                   maxLength={100}
                   value={questForm.category}
@@ -1270,6 +1274,8 @@ function App() {
                 <label>
                   XP
                   <input
+                    id="quest-xp"
+                    name="xp"
                     required
                     min="1"
                     type="number"
@@ -1280,6 +1286,8 @@ function App() {
                 <label>
                   GOLD
                   <input
+                    id="quest-gold"
+                    name="gold"
                     required
                     min="0"
                     type="number"
@@ -1290,6 +1298,8 @@ function App() {
                 <label>
                   ICON
                   <input
+                    id="quest-icon"
+                    name="icon"
                     required
                     maxLength={4}
                     value={questForm.icon}

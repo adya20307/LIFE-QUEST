@@ -179,6 +179,8 @@ function Login({ onLogin }) {
               <label>PLAYER NAME</label>
 
               <input
+                id="player-name"
+                name="name"
                 type="text"
                 placeholder="Enter your name"
                 value={name}
@@ -198,6 +200,8 @@ function Login({ onLogin }) {
             <label>EMAIL</label>
 
             <input
+              id="email"
+              name="email"
               type="email"
               placeholder="hero@example.com"
               value={email}
@@ -214,6 +218,8 @@ function Login({ onLogin }) {
             <label>PASSWORD</label>
 
             <input
+              id="password"
+              name="password"
               type="password"
               placeholder="Enter your password"
               value={password}
